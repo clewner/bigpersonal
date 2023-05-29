@@ -348,6 +348,10 @@ body{
 	opacity: 0.5;
 }
 
+.timg{
+	opacity:0.7;
+}
+
 .content__title {
 	grid-area: title;
 	font-family: 'Playfair Display', serif;
@@ -468,10 +472,10 @@ body{
 
 /* layout-3 */
 .content--layout-3 {
-	grid-template-rows: 75px 75px 150px;
+	grid-template-rows: 150px 150px 300px;
 	grid-template-areas:	"... ... desc desc"
-							"author title title title"
-							"author ... link link";
+							"author ... desc desc"
+							"author title link link";
 }
 
 .content--layout-3 .content__img {
@@ -528,6 +532,12 @@ body{
 		grid-template-rows: max(100px, 22vw) max(50px, 11vw) max(50px, 11vw);
 
 	}
+
+	.content--layout-3{
+		grid-template-rows: max(50px, 11vw) max(50px, 11vw) max(100px, 22vw);
+	}
+
+	
 	.content__title {
 
 		font-size: 17vw;
