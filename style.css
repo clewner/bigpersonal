@@ -344,6 +344,11 @@ body{
 
 }
 
+.gradeimg{
+	width:600px;
+	height:auto;
+}
+
 .pigenimg{
 	opacity: 0.5;
 }
@@ -402,6 +407,11 @@ body{
 .realpigentitle{
 	font-size: 12em;
 	line-height: 200px;
+}
+
+.gradetitle{
+	font-size: 8em;
+	line-height: 130px;
 }
 
 .content__img,
@@ -562,6 +572,11 @@ body{
 		height: max(44vw, 200px);
 	
 	}
+
+	.gradeimg{
+		width: max(44vw, 200px);
+		height:auto;
+	}
 	
 	.content__desc {
 
@@ -581,6 +596,11 @@ body{
 	.realpigentitle{
 		font-size:14vw;
 		line-height: 14vw;
+	}
+
+	.gradetitle{
+		font-size: 10vw;
+		line-height: 10vw;
 	}
 
 
