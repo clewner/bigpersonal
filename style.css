@@ -597,6 +597,8 @@ body{
 		padding-top:0px;
 	}
 
+	
+
 	.pigenwrap{
 		padding-top:30px;
 	}
@@ -615,6 +617,10 @@ body{
 	.content__desc{
 		padding:0;
 	}
+
+	.content--layout-3 .content__desc{
+		padding-left: 15px;
+	}
 	.content--layout-2 {
 		grid-template-areas:	"... title title title"
 								"link link ... author"
@@ -623,6 +629,16 @@ body{
 
 		grid-template-columns: 0 max(100px, 22vw) max(100px, 22vw) max(100px, 22vw); 
 		grid-template-rows: max(100px, 22vw) max(50px, 11vw) max(50px, 11vw);
+	}
+
+	.content--layout-3 {
+		grid-template-areas:	"... ... ... ..."
+							"author ... ... ..."
+							"author ... title link"
+							"desc desc desc desc";
+
+		grid-template-columns: 0 max(100px, 22vw) max(100px, 22vw) max(100px, 22vw); 
+		
 	}
 	
 	.pigentitle{
