@@ -20,17 +20,7 @@ body{
 
 
 
-.firstscreen{
-	margin:0;
-	padding:0;
-	
-	overflow: hidden;
-	align-items: center;
-    height:100vh;
-	background-color: #fff037;
 
-	
-}
 
 
 
@@ -282,7 +272,15 @@ body{
 }
 
 .firstscreen{
-	height:100vh;
+	margin:0;
+	padding:0;
+	
+	overflow: hidden;
+	align-items: center;
+    height:100vh;
+	background-color: #fff037;
+
+	
 }
 
 .content {
