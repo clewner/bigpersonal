@@ -618,9 +618,7 @@ body{
 		padding:0;
 	}
 
-	.content--layout-3 .content__desc{
-		padding-left: 15px;
-	}
+	
 	.content--layout-2 {
 		grid-template-areas:	"... title title title"
 								"link link ... author"
@@ -663,6 +661,11 @@ body{
 	}
 	
 	.content--layout-4 .content__desc {
+		text-align: left;
+		padding-top:10px;
+	}
+
+	.content--layout-3 .content__desc {
 		text-align: left;
 		padding-top:10px;
 	}
