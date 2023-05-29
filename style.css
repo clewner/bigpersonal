@@ -264,6 +264,9 @@ body{
     fill: #000000;
 }
 
+.firstscreen{
+	height:100vh;
+}
 
 /* projects*/
 .content-wrap {
@@ -278,6 +281,9 @@ body{
 
 }
 
+.firstscreen{
+	height:100vh;
+}
 
 .content {
 	position: relative;
