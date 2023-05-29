@@ -18,19 +18,19 @@ body{
 
 }
 
+
+
 .firstscreen{
 	margin:0;
 	padding:0;
 	
 	overflow: hidden;
 	align-items: center;
-    
+    height:100vh;
 	background-color: #fff037;
 
 	
 }
-
-
 
 
 
@@ -89,7 +89,7 @@ body{
 	z-index:2;
 	overflow: hidden;
 	align-items: center;
-    height:calc(120vh - 150px);
+    height:calc(100vh - 150px);
 	background-color: black;
 	
 }
@@ -277,6 +277,7 @@ body{
 
 
 }
+
 
 .content {
 	position: relative;
@@ -573,7 +574,7 @@ body{
 
 }
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 785px) {
 	.nextwrap{
 		padding-top:0px;
 	}
@@ -581,13 +582,14 @@ body{
 	.pigenwrap{
 		padding-top:30px;
 	}
-	.secondscreen{
-		height:70vh;
-	}
-
 	.content-wrap{
 		height: 70vh;
 	}
+	.secondscreen{
+		height:calc(100vh - 150px);
+	}
+
+	
 	.content--layout {
 		transform: scale3d(0.8,0.8,1);
 	}
@@ -674,3 +676,10 @@ body{
 	
 }
 
+
+.firstscreen{
+
+    height:100vh;
+
+	
+}
