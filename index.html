@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/modernizer.js"></script>
 </head>
 <body>
     <div class="morph-wrap">
@@ -104,7 +105,7 @@
             <h3 class="content__title realpigentitle" id="pigentitle">Scotbotics</h3>
             
             <p class="content__desc">I was one of two co-presidents of Scotbotics, an FRC robotics team.</p>
-            <a href="https://scotbotics.com/" class="content__link">Learn More</a>
+            <a type="button" id="trigger-overlay" class="content__link">Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap">
@@ -113,18 +114,26 @@
             <h3 class="content__title pigentitle">Swerve</h3>
             
             <p class="content__desc">Swerve is a geometric browser game I developed in Unity using C#.</p>
-            <a href="httphttps://clewn.itch.io/swerve" class="content__link">Learn More</a>
+            <a href="https://clewn.itch.io/swerve" class="content__link">Learn More</a>
         </div>
     </div>
     <section class="content content--related">
 				
     </section>
+    <div class="overlay overlay-simplegenie">
+        <button type="button" class="overlay-close">Close</button>
+        <h1 class="desctitle">Scotbotics</h1>
+        <p class="descpar">I was the co-president of Scotbotics, an FRC robotics team from 2022-2023.</p>
+        
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/anime.min.js"></script>
 	<script src="js/scrollMonitor.js"></script>
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/popup.js"></script>
 
 </body>
 </html>
