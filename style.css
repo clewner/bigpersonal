@@ -892,13 +892,13 @@ body{
 	margin:0;
 	padding:0;
 	left:0;
-	line-height:max(13vw, 60px);
-	font-size:max(13vw, 60px);
+	line-height:clamp(60px, 13vw, 200px);
+	font-size:clamp(60px, 13vw, 200px);
 }
 
 .pigtitle{
-	line-height:max(13vw, 50px);
-	font-size:max(13vw, 50px);
+	line-height:clamp(50px, 13vw, 160px);
+	font-size:clamp(50px, 13vw, 160px);
 }
 
 .descpar{
@@ -961,6 +961,10 @@ li{
 
 .demoleft{
 	margin-left:1em;
+}
+
+.demoright{
+	margin-right:1em;
 }
 
 .content__link:hover{
