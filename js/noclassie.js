@@ -15,16 +15,16 @@
 	function toggleOverlay(whichid) {
 		overlay = document.getElementById(whichid +"_");
 		console.log("hi");
-		if( classie.has( overlay, 'open' ) ) {
+		if( overlay.classList.contains('open')) {
 			document.body.style.overflow = 'auto';
-			classie.remove( overlay, 'open' );
-			classie.add( overlay, 'close' );
+			overlay.classList.remove('open');
+			overlay.classList.add('close');
 			var onEndTransitionFn = function( ev ) {
 				if( support.transitions ) {
 					if( ev.propertyName !== 'visibility' ) return;
 					this.removeEventListener( transEndEventName, onEndTransitionFn );
 				}
-				classie.remove( overlay, 'close' );
+				overlay.classList.remove('close');
 			};
 			if( support.transitions ) {
 				overlay.addEventListener( transEndEventName, onEndTransitionFn );
@@ -33,8 +33,8 @@
 				onEndTransitionFn();
 			}
 		}
-		else if( !classie.has( overlay, 'close' ) ) {
-			classie.add( overlay, 'open' );
+		else if( !overlay.classList.contains('close')) {
+			overlay.classList.add('open');
 			document.body.style.overflow = 'hidden';
 		}
 	}
