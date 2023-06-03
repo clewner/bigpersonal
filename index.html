@@ -9,6 +9,13 @@
     <script src="js/modernizer.js"></script>
 </head>
 <body>
+    <svg class="hidden">
+        <title>shape demo</title>
+        <symbol id="shape-demo" viewBox="0 0 200 100">
+            
+            <path d="M 6.144,74.1 C 20.4,107.4 70.13,94.33 94.22,95.74 121.3,97.41 130.8,101.1 154.7,99.38 178.6,97.72 201.9,78.95 199.4,46.86 197.1,14.96 174.9,4.781 161.4,1.827 147.9,-1.128 119.8,8.284 105.6,8.766 85.34,9.449 81.91,7.628 51.08,2.334 17.26,-3.482 -8.105,40.84 6.144,74.1 Z" />
+        </symbol>
+    </svg>
     <div class="morph-wrap">
         <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
             <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
@@ -44,88 +51,221 @@
             </svg>
         </div>
         <div class="content content--layout content--layout-1">
-            <img class="content__img timg" src="img/meteaching.png" alt="Some image" style="transform: translateX(0px) translateY(0px);">
-            <h3 class="content__title" style="transform: translateX(0px) translateY(0px);">BayRise</h3>
+            <img class="content__img timg trigger-overlay" id="overlaybay" src="img/meteaching.png" alt="Some image" style="transform: translateX(0px) translateY(0px);">
+            <h3 class="content__title trigger-overlay" id="overlaybay" style="transform: translateX(0px) translateY(0px);">BayRise</h3>
             
             <p class="content__desc">I'm the executive director and cofounder of BayRise, a 501(c)(3) nonprofit dedicated to bringing enrichment opportunitites to people that wouldn't normally get them.</p>
-            <a href="https://bayriseinc.org/" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay demoleft " id="overlaybay"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
         
 
     </div>
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-4">
-            <img class="content__img pigenimg" src="img/croppedpif.png" alt="Some image" />
-            <h3 class="content__title realpigentitle" id="pigentitle">Pigeon<br>holed</h3>
+            <img class="content__img trigger-overlay pigenimg" id="overlaypig" src="img/croppedpif.png" alt="Some image" />
+            <h3 class="content__title trigger-overlay realpigentitle" id="overlaypig">Pigeon<br>holed</h3>
             
             <p class="content__desc">Pigeonholed is my blog, where I write about philosophy, technology, media, and whatever else I feel like writing about.</p>
-            <a href="https://pigeonholed.co/about" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay demoleft " id="overlaypig"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-2">
-            <img class="content__img" src="img/robotics.png" alt="Some image" />
-            <h3 class="content__title pigentitle">Highlander Robotics</h3>
+            <img class="content__img trigger-overlay" id="overlayrob" src="img/robotics.png" alt="Some image" />
+            <h3 class="content__title trigger-overlay pigentitle" id="overlayrob">Highlander Robotics</h3>
             
             <p class="content__desc">I am the training lead, and a software developer for Highlander Robotics, an FRC robotics team, which means that I facilitate the teaching of all members, and contribute to the robot's code.</p>
-            <a href="https://frc8033.com/about" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay" id="overlayrob"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-3">
-            <img class="content__img timg" src="img/running.jpg" alt="Some image" />
-            <h3 class="content__title pigentitle">Sprinter</h3>
+            <img class="content__img trigger-overlay timg" id ="overlayrun" src="img/running.jpg" alt="Some image" />
+            <h3 class="content__title trigger-overlay pigentitle" id="overlayrun">Sprinter</h3>
             
             <p class="content__desc">I am a varsity sprinter on Piedmont High's track and field team, running the 100m (11.95s), 200m (24.69s), and the 4x100m relay.</p>
-            <a href="https://www.piedmontathletics.com/track-field" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay demoleft" id="overlayrun" ><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-1">
-            <img class="content__img timg" src="img/theme.png" alt="Some image" style="transform: translateX(0px) translateY(0px);">
-            <h3 class="content__title themetitle" style="transform: translateX(0px) translateY(0px);">Theme<br>Tracker</h3>
+            <img class="content__img trigger-overlay timg" id="overlaytheme" src="img/theme.png" alt="Some image" style="transform: translateX(0px) translateY(0px);">
+            <h3 class="content__title trigger-overlay themetitle" id="overlaytheme" style="transform: translateX(0px) translateY(0px);">Theme<br>Tracker</h3>
             
             <p class="content__desc">I developed Theme Tracker, a web app that allows users to track words across any word in the public domain, using Python, HTML, Beautiful Soup, and PythonAnywhere hosting.</p>
-            <a href="http://clewn.pythonanywhere.com/" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay demoleft" id="overlaytheme" ><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
 
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-2">
-            <img class="content__img pigenimg gradeimg" src="img/grade.png" alt="Some image" />
-            <h3 class="content__title gradetitle">Grade<br>Calculated</h3>
+            <img class="content__img trigger-overlay pigenimg gradeimg" src="img/grade.png" alt="Some image" id="overlaygrade" />
+            <h3 class="content__title trigger-overlay gradetitle" id="overlaygrade">Grade<br>Calculated</h3>
             
             <p class="content__desc">GradeCalculated is a site I built using HTML, CSS, JS, and Python, that allows students to calculate their GPA and final grades, as well as generate top level vocabulary words.</p>
-            <a href="https://gradecalculated.com/" class="content__link">Learn More</a>
+            <a class="content__link trigger-overlay" id="overlaygrade" ><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-4">
-            <img class="content__img pigenimg" src="img/scotbotter.jpg" alt="Some image" />
-            <h3 class="content__title realpigentitle" id="pigentitle">Scotbotics</h3>
+            <img class="content__img trigger-overlay pigenimg" src="img/scotbotter.jpg" alt="Some image" />
+            <h3 class="content__title trigger-overlay realpigentitle" id="pigentitle">Scotbotics</h3>
             
             <p class="content__desc">I was one of two co-presidents of Scotbotics, an FRC robotics team.</p>
-            <a type="button" id="trigger-overlay" class="content__link">Learn More</a>
+            <a class="content__link demoleft trigger-overlay" type="button" id="overlayscot"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <div class="content-wrap nextwrap">
         <div class="content content--layout content--layout-3">
-            <img class="content__img timg" src="img/squared.png" alt="Some image" />
-            <h3 class="content__title pigentitle">Swerve</h3>
+            <img class="content__img trigger-overlay timg" id="overlayswerve" src="img/squared.png" alt="Some image" />
+            <h3 class="content__title trigger-overlay pigentitle" id="overlayswerve">Swerve</h3>
             
             <p class="content__desc">Swerve is a geometric browser game I developed in Unity using C#.</p>
-            <a href="https://clewn.itch.io/swerve" class="content__link">Learn More</a>
+            <a class="content__link demoleft trigger-overlay" id="overlayswerve"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
     <section class="content content--related">
 				
     </section>
-    <div class="overlay overlay-simplegenie">
-        <button type="button" class="overlay-close">Close</button>
-        <h1 class="desctitle">Scotbotics</h1>
-        <p class="descpar">I was the co-president of Scotbotics, an FRC robotics team from 2022-2023.</p>
+    <div class="overlay overlay-simplegenie" id="overlaybay_">
+        <button type="button" class="overlay-close" id="overlaybay"></button>
+        <a class="learnevenmore demoleft" href="https://bayriseinc.org/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle">BayRise</h1>
+        <p class="descpar">I'm the co-founder and executive director of BayRise, a 501(c)(3) nonprofit dedicated to creating positive change in the Bay Area through providing enrichment opportunities to people who otherwise wouldn't get them.</p>
+        <ul class="listpar">
+            <li>Cofounded BayRise, and assembled a team of like-minded individuals to join the team.</li>
+            <li>Oversee daily operations of the organization, managing a team of 8 members and 10 volunteers so far.</li>
+            <li>File all legal documents (Articles of Incorporation, Form 1023 (nonprofit status), etc).</li>
+            <li>Lead the teaching of computer science enrichment programs.</li>
+            <li>Personally built partnerships with 4 local nonprofits and businesses to support organizational initiatives.</li>
+            <li>Facilitated the teaching of over 60 kids and young adults in the subjects of computer science, arts & crafts, and physics.</li>
+            <li>Designed and coded the website from scratch.</li>
+        </ul>
+        
+        </div>
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlaypig_">
+        <button type="button" class="overlay-close" id="overlaypig"></button>
+        <a class="learnevenmore demoleft" href="https://pigeonholed.co/about"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle pigtitle">Pigeonholed</h1>
+        <p class="descpar">Pigeonholed is my blog, where I write about whatever I feel like writing about, including philosophy, technology, literature, media, and more.</p>
+        <ul class="listpar">
+            <li>Conceptualized, developed, and maintained a successful blog from scratch.</li>
+            <li>Wrote, edited, and published 11 blog posts.</li>
+            <li>Handled all blog-related administrative tasks, including responding to inquiries, maintaining the website, and managing content schedules.</li>
+            <li>Put together a readable UI/UX.</li>
+            <li>Coded the website from scratch.</li>
+        </ul>
+        
+        </div>
         
     </div>
+    <div class="overlay overlay-simplegenie" id="overlayrob_">
+        <button type="button" class="overlay-close" id="overlayrob"></button>
+        <a class="learnevenmore demoleft" href="https://frc8033.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle pigtitle">Highlander Robotics</h1>
+        <p class="descpar">I'm the training lead of, and a software developer for, Highlander Robotics, an FRC robotics team.</p>
+        <ul class="listpar">
+            <li>Facilitate the teaching of all members of the team, including the current 50 on the team right now.</li>
+            <li>Delegate other leads to help with training in specific fields.</li>
+            <li>Organize a system that allows for everyone to get individual training attention.</li>
+            <li>Utilized Java and the WPILib library to develop and optimize robot functionalities.</li>
+            <li>Collaborated with the hardware team to ensure seamless integration of software and mechanical components such as the grabber subsystem.</li>
+            <li>Worked on version control using tools like Git to improve code collaboration and efficiency.</li>
+            <li>Debugged and resolved software issues, improving robot performance.</li>
+        </ul>
+        
+        </div>
+        
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlayrun_">
+        <button type="button" class="overlay-close" id="overlayrun"></button>
+        <a class="learnevenmore demoleft" href="https://www.piedmontathletics.com/track-field"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle pigtitle">Sprinter</h1>
+        <p class="descpar">I'm a varsity sprinter on Piedmont High's track and field team.</p>
+        <ul class="listpar">
+            <li>100m: 11.95s.</li>
+            <li>200m: 24.69s.</li>
+            <li>Run the 4x100m as well.</li>
+        </ul>
+        
+        </div>
+        
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlaytheme_">
+        <button type="button" class="overlay-close" id="overlaytheme"></button>
+        <a class="learnevenmore demoleft" href="http://clewn.pythonanywhere.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle pigtitle">Theme Tracker</h1>
+        <p class="descpar">I developed Theme Tracker, a web app that lets students track specific words and phrases across any book in the public domain, returning every paragraph that has one of the words they choose. This allows for a better understanding of recurring themes and symbols in the text, and can help when writing analytical essays that require text evidence.</p>
+        <ul class="listpar">
+            <li>Conceptualized, designed, and developed Theme Tracker.</li>
+            <li>Utilized Python, Flask, HTML, and JavaScript to create a user-friendly interface and efficient back-end functionalities.</li>
+            <li>Developed a web scraper to dynamically access and analyze books from public domain databases, eliminating the need for manual downloads.</li>
+            <li>Hosted the website on a free server using PythonAnywhere, managing all aspects of deployment and maintenance.</li>
+            <li>Incorporated user feedback to continuously improve website features, enhancing user satisfaction and engagement.</li>
+            <li>Served over 100 unique users.</li>
+            
+        </ul>
+        
+        </div>
+        
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlaygrade_">
+        <button type="button" class="overlay-close" id="overlaygrade"></button>
+        <a class="learnevenmore demoleft" href="http://clewn.pythonanywhere.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle pigtitle">Grade Calculated</h1>
+        <p class="descpar">I developed GradeCalculated, a website that allows students to calclulate their GPA and Final Grades, as well as generate top level vocabulary words to stimulate essay writing and help build vocabulary.</p>
+        <ul class="listpar">
+            <li>Designed and developed a comprehensive web platform serving high school students.</li>
+            <li>Utilized HTML, CSS and JavaScript to create a userfriendly interface and efficient back-end.</li>
+            <li>Created a Python script to preprocess lists of vocabulary words, transforming them into the uniform format used needed to put them in a JSON file.</li>
+            <li>Created an extensive database of high-level essay words and phrases to inspire and enhance student writing, using a web scraper to find the words, and a definitions API to get the definitions and other info.</li>
+            <li>Implemented algorithms for accurate GPA and final grade calculation based on various grading scales.</li>
+            <li>Served over 40 unique students.</li>
+            
+        </ul>
+        
+        </div>
+        
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlayscot_">
+        <button type="button" class="overlay-close" id="overlayscot"></button>
+        <a class="learnevenmore demoleft" href="https://scotbotics.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle">Scotbotics</h1>
+        <p class="descpar">I was the co-president and a software developer of Scotbotics, an FTC robotics team from 2022-2023.</p>
+        <ul class="listpar">
+            <li>Led a team of 8 members in the design, build, and programming of competitive robots.</li>
+            <li>Organized and facilitated weekly team meetings, fostering a collaborative and supportive team environment.</li>
+            <li>Designed and coded algorithms for robot movement, and autonomous operation.</li>
+            <li>Utilized Java and Android Studio.</li>
+        </ul>
+        </div>
+    </div>
+    <div class="overlay overlay-simplegenie" id="overlayswerve_">
+        <button type="button" class="overlay-close" id="overlayswerve"></button>
+        <a class="learnevenmore demoleft" href="https://scotbotics.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <div class="desccontain">
+        <h1 class="desctitle">Swerve</h1>
+        <p class="descpar">Swerve is a geometric browser game where you play as a square trying to stay alive, collecting tiny hexagons as you are constantly barraged by triangular projectiles.</p>
+        <ul class="listpar">
+            <li>Conceptualized, designed, and developed Swerve.</li>
+            <li>Utilized Unity and C# to build engaging gameplay mechanics and intuitive user interfaces.</li>
+            <li>Tested and optimized the game to ensure smooth performance across various browsers and devices.</li>
+            <li>Managed all aspects of the game hosting on the Itch.io platform.</li>
+            <li>Troubleshot and resolved technical issues, improving the gameplay experience.</li>
+        </ul>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
@@ -134,6 +274,8 @@
     <script src="js/scripts.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/magnetic.js"></script>
+  
 
 </body>
 </html>
