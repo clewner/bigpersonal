@@ -15,6 +15,7 @@ body{
 	margin:0;
 	padding:0;
 	background-color: #fff037;
+	
 
 }
 
@@ -57,6 +58,8 @@ body{
     line-height: 0;
     transform: rotate(180deg);
 	z-index:2;
+	margin:0;
+	padding:0;
 	
 }
 
@@ -244,6 +247,8 @@ body{
     overflow: hidden;
     line-height: 0;
 	z-index:5;
+	margin:0;
+	padding:0;
 }
 
 .custom-shape-divider-top-1685336232 svg {
@@ -333,10 +338,12 @@ body{
 	text-align: center;
 	align-content: center;
 	justify-content: center;
+	position: relative;
 	padding: 0 2em;
 	min-height: 600px;
 	height: 100vh;
 	font-size: 0.85em;
+	
 }
 
 .content__img {
@@ -469,10 +476,6 @@ body{
 	color:white;
 }
 
-.magnetic-button {
-	
-	transition: transform 0.5s;
-  }
 
 .content__info {
 	grid-column: 1 / 3;
@@ -567,6 +570,10 @@ body{
 	.infocontainer{
 		width:80%;
 	}
+	.aboutpar{
+
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -575,10 +582,7 @@ body{
 		font-size: 50px;
 	}
 	
-	.aboutpar{
-
-		font-size: 20px;
-	}
+	
 	
 }
 
@@ -670,15 +674,74 @@ body{
 
 }
 
+.buttonlink {
+	display: inline-block;
+	position: relative;
+	font-size: 0.85em;
+	margin: 0 0.25em 0.5em 0em;
+	padding: 1em;
+	grid-area: link;
+	align-self: end;
+	justify-self: start;
+	z-index: 10;
+	padding: 0 1em 0.15em;
+	color:#fff480;
+	text-decoration: none;
+	transition:0.2s;
+	cursor: pointer;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.buttonlink:hover{
+	color:white;
+}
+  
+.button{
+	font-size:18px;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	margin-top:20px;
+	
+}
+
+
+
+.buttonsvg{
+	top: 0;
+	left: 35%;
+	position: absolute;
+	width: 28%;
+	
+	height: 100%;
+	z-index: -1;
+	fill: #867d1c;
+
+	
+	transform: scaleX(5) scaleY(3.5);
+}
+  
+
+@media screen and (max-height:700px) {
+	.button{
+		margin-bottom:150px;
+	}
+}
+
+@media screen and (max-height: 630px){
+	.stuffscreen{
+		padding-top:300px;
+		padding-bottom:70px;
+	}
+}
+
 @media screen and (max-width: 785px) {
 	.nextwrap{
-		padding-top:0px;
+		padding-top:0;
 	}
 
 	
 
 	.pigenwrap{
-		padding-top:30px;
+		padding-top:30vh;
 	}
 	.content-wrap{
 		height: 70vh;
@@ -1000,5 +1063,228 @@ li{
 
 	.listpar{
 		font-size:25px;
+	}
+}
+
+.contactinput:focus {
+	border-color: #e7a64c;
+  }
+  
+  .contactinput:focus {
+	outline: none;
+  }
+
+
+form{
+
+	position: relative;
+}
+
+.contactinput {
+	position: relative;
+	left:50%;
+	transform:translateX(-50%);
+	text-align: left;
+	margin: 0;
+	padding: 10px;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	width: calc(100% - 22px);
+	outline: none;
+	margin-top: 13px;
+	font-size: 17px;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	border-bottom-width: 2px;
+	transition: all 0.4s ease;
+	height: 20px;
+	
+  }
+
+  .messageinput {
+	padding-top:15px;
+	height: 150px;
+	transition: width 0s;
+	transition: height 0s;
+
+	
+  }
+
+
+  
+  .firstparacontact{
+	  text-align:center; 
+	  margin-top:20px; 
+	  margin-bottom:25px;
+	  line-height: calc(1ex / 0.28);
+  }
+  
+
+
+/*font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;*/
+
+.emailpara{
+    text-align:center; 
+    margin-bottom:10px;
+    line-height: calc(1ex / 0.35);
+}
+
+.contactparagraph {
+  
+	text-align: center;
+	padding: 0;
+	margin: 0;
+  
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  
+	font-size: 1.1em;
+	letter-spacing: 0.02em;
+	word-spacing: 0.05em;
+  }
+
+.buttonform{
+	border-radius: 0px 0px 15px 15px;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	width:calc(100% - 30px);
+	text-align: center;
+	padding:10px;
+	margin:5px;
+	font-size:20px;
+
+}
+
+
+
+
+
+  input[type="submit"] {
+	height: 50px;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	border: 1px solid #e7a64c;
+	background-color: transparent;
+	color: #e7a64c;
+	width: 100%;
+	padding: 12px 0px;
+	font-size: 18px;
+	font-weight: 400;
+	background: transparent;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 15px;
+  
+	margin-top: 15px;
+	border-radius: 3px;
+	text-transform: capitalize;
+}
+
+
+  input:focus {
+	outline: none;
+  }
+
+  #nameerror, #emailerror, #messageerror {
+    display: none;
+    width: calc(100% - 22px);
+    position: relative;
+	left:50%;
+	transform:translateX(-50%);
+    margin: 0;
+    padding: 2px 0px;
+    background-color: #dc3545;
+    font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    color: #fff;
+    border-width: 0;
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  .inputerror{
+    border-color:#dc3545; 
+    border-width:thin; 
+    border-radius: 3px 3px 0px 0px;
+  }
+
+
+
+.contacttitle{
+	font-size: 60px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin:0;
+	
+}
+
+.lastitem{
+	margin-bottom:150px;
+}
+
+.contacttitlewrap{
+
+	width:640px;
+	text-align: center;
+	position: relative;
+	margin:0;
+	padding:0;
+}
+
+form{
+	text-align: center;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+.footer{
+	position: absolute;
+	left:50%;
+	transform:translateX(-50%);
+	bottom:0;
+	width: 60%;
+	text-align: left;
+	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	border-top: 2px solid #000000;
+	
+}
+
+@media screen and (max-width:800px) {
+	.footer{
+		width:80%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.contacttitlewrap{
+		width: 90vw;
+	}
+
+	.scroll-down2, .scroll-down2:before, .scroll-down2:after{
+		scale: 0.9;
+	}
+}
+
+@media screen and (max-width:600px){
+
+	.scroll-down2, .scroll-down2:before, .scroll-down2:after{
+		scale: 0.8;
+	}
+}
+
+@media screen and (max-width:500px){
+
+	.scroll-down2, .scroll-down2:before, .scroll-down2:after{
+		scale: 0.7;
+	}
+}
+
+@media screen and (max-width:400px){
+	.contacttitle{
+		font-size: 45px;
+
+		
 	}
 }

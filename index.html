@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/modernizer.js"></script>
+    <script src="js/validate.js"></script>
 </head>
 <body>
     <svg class="hidden">
@@ -60,7 +61,7 @@
         
 
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-4">
             <img class="content__img trigger-overlay pigenimg" id="overlaypig" src="img/croppedpif.png" alt="Some image" />
             <h3 class="content__title trigger-overlay realpigentitle" id="overlaypig">Pigeon<br>holed</h3>
@@ -78,7 +79,7 @@
             <a class="content__link trigger-overlay" id="overlayrob"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-3">
             <img class="content__img trigger-overlay timg" id ="overlayrun" src="img/running.jpg" alt="Some image" />
             <h3 class="content__title trigger-overlay pigentitle" id="overlayrun">Sprinter</h3>
@@ -87,7 +88,7 @@
             <a class="content__link trigger-overlay demoleft" id="overlayrun" ><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-1">
             <img class="content__img trigger-overlay timg" id="overlaytheme" src="img/theme.png" alt="Some image" style="transform: translateX(0px) translateY(0px);">
             <h3 class="content__title trigger-overlay themetitle" id="overlaytheme" style="transform: translateX(0px) translateY(0px);">Theme<br>Tracker</h3>
@@ -97,7 +98,7 @@
         </div>
     </div>
 
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-2">
             <img class="content__img trigger-overlay pigenimg gradeimg" src="img/grade.png" alt="Some image" id="overlaygrade" />
             <h3 class="content__title trigger-overlay gradetitle" id="overlaygrade">Grade<br>Calculated</h3>
@@ -106,7 +107,7 @@
             <a class="content__link trigger-overlay" id="overlaygrade" ><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-4">
             <img class="content__img trigger-overlay pigenimg" id="overlayscot" src="img/scotbotter.jpg" alt="Some image" />
             <h3 class="content__title trigger-overlay realpigentitle" id="overlayscot">Scotbotics</h3>
@@ -115,7 +116,7 @@
             <a class="content__link demoleft trigger-overlay" type="button" id="overlayscot"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap">
         <div class="content content--layout content--layout-3">
             <img class="content__img trigger-overlay timg" id="overlayswerve" src="img/squared.png" alt="Some image" />
             <h3 class="content__title trigger-overlay pigentitle" id="overlayswerve">Swerve</h3>
@@ -124,7 +125,7 @@
             <a class="content__link demoleft trigger-overlay" id="overlayswerve"><svg class="decoshape" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn More</a>
         </div>
     </div>
-    <div class="content-wrap nextwrap">
+    <div class="content-wrap nextwrap pigenwrap lastitem">
         <div class="content content--layout content--layout-2">
             <img class="content__img trigger-overlay pigenimg gradeimg" src="img/squarequote.png" alt="Some image" id="overlayquote" />
             <h3 class="content__title trigger-overlay gradetitle" id="overlayquote">Daily<br>Quotes</h3>
@@ -134,8 +135,35 @@
         </div>
     </div>
     <section class="content content--related">
-				
+        <div class = "contacttitlewrap">
+        
+            <h4 class="contacttitle">Contact</h4>
+            <p style="line-height:auto;" class="contactparagraph">Email me at:</p>
+            <p class="contactparagraph othersites emailpara">isaac.saxonov@gmail.com</p>
+            <form action="https://formsubmit.co/228f767556a147dd57f7144b64e6e7a1" method="POST" id="contactform">
+                <input type="hidden" name="_captcha" value="false">
+                <!--<input type="hidden" name="_next" value="https://pigeonholed.co/messageconfirm"> -->
+                <input type="text" name="_honey" style="display:none">
+    
+                <input type="text" id="contactname" name="name" class="contactinput" placeholder="Your name" required>
+                <div id="nameerror">Please enter your name</div>
+    
+    
+                <input type="email" id="contactemail" name="email" class="contactinput" placeholder="Your email address" required>
+                <div id="emailerror">Please enter a valid email address</div>
+                
+                <textarea type="text" id="contactmessage" name="message" class="contactinput messageinput" rows="10" placeholder="Your message" required></textarea>
+                <div id="messageerror">Please enter your message</div>
+                
+                <a class="button buttonlink" type="button" onclick="validateContact()"><svg class="buttonsvg" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Send</a>
+           </form>
+        </div>
+        <div class="footer">
+            <p class="footertext">© 2023 Isaac Saxonov. All rights reserved.</p>
+            <p class="footertext">Website designed and developed by Isaac Saxonov.</p>
+        </div>
     </section>
+
     <div class="overlay overlay-simplegenie" id="overlaybay_">
         <button type="button" class="overlay-close" id="overlaybay"></button>
         <a class="learnevenmore demoleft" href="https://bayriseinc.org/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
@@ -226,7 +254,7 @@
     </div>
     <div class="overlay overlay-simplegenie" id="overlaygrade_">
         <button type="button" class="overlay-close" id="overlaygrade"></button>
-        <a class="learnevenmore demoleft" href="http://clewn.pythonanywhere.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <a class="learnevenmore demoleft" href="https://gradecalculated.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
         <div class="desccontain">
         <h1 class="desctitle pigtitle">Grade Calculated</h1>
         <p class="descpar">I developed GradeCalculated, a website that allows students to calclulate their GPA and Final Grades, as well as generate top level vocabulary words to stimulate essay writing and help build vocabulary.</p>
@@ -259,7 +287,7 @@
     </div>
     <div class="overlay overlay-simplegenie" id="overlayswerve_">
         <button type="button" class="overlay-close" id="overlayswerve"></button>
-        <a class="learnevenmore demoleft" href="https://scotbotics.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <a class="learnevenmore demoleft" href="https://clewn.itch.io/swerve"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
         <div class="desccontain">
         <h1 class="desctitle">Swerve</h1>
         <p class="descpar">Swerve is a geometric browser game where you play as a square trying to stay alive, collecting tiny hexagons as you are constantly barraged by triangular projectiles.</p>
@@ -274,7 +302,7 @@
     </div>
     <div class="overlay overlay-simplegenie" id="overlayquote_">
         <button type="button" class="overlay-close" id="overlayquote"></button>
-        <a class="learnevenmore demoleft" href="https://scotbotics.com/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
+        <a class="learnevenmore demoleft" href="https://replit.com/@IsaacSaxonov1/dailyQuoteBot/"><svg class="decolearn" preserveAspectRatio="none"><use xlink:href="#shape-demo"></use></svg>Learn Even More</a>
         <div class="desccontain">
         <h1 class="desctitle pigtitle">Daily Quotes</h1>
         <p class="descpar">Daily Quotes is a discord bot I developed that posts a meaningful quote twice a day in any server it's added to, and allows users to get quotes on command.</p>
@@ -287,6 +315,7 @@
         </ul>
         </div>
     </div>
+    
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
