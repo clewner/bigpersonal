@@ -1067,7 +1067,7 @@ li{
 }
 
 .contactinput:focus {
-	border-color: #e7a64c;
+	border-color: #fff480;
   }
   
   .contactinput:focus {
@@ -1164,9 +1164,9 @@ form{
   input[type="submit"] {
 	height: 50px;
 	font-family: "neue-haas-grotesk-text",-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-	border: 1px solid #e7a64c;
+	border: 1px solid #fff480;
 	background-color: transparent;
-	color: #e7a64c;
+	color: #fff480;
 	width: 100%;
 	padding: 12px 0px;
 	font-size: 18px;
