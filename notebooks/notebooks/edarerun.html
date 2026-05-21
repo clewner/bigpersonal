@@ -588,7 +588,7 @@ Unique dates: 1195
 </section>
 <section id="our-first-model" class="level1">
 <h1>Our first model</h1>
-<p>Now let’s first examine how the dts (Duration Times Spread) and industry sector of a bond (on the latest date we have data from) impacts its total return.</p>
+<p>Lets’s first examine how the DTS (Duration Times Spread) and industry sector of a bond (on the latest date we have data from) impacts its total return.</p>
 <div id="cell-13" class="cell" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> dataset.drop_nulls(<span class="st">"next_day_funded_total_return"</span>).<span class="bu">filter</span>(pl.col(<span class="st">"date"</span>) <span class="op">==</span> pl.col(<span class="st">"date"</span>).<span class="bu">max</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -1614,7 +1614,7 @@ Unique dates: 1195
 </div>
 </div>
 </div>
-<p>Here we’ll create a Bayesian regression model where we assume the relationship between the next-day funded total return and DTS of a bond can be modeled by a StudentT distribution, where the mean of the distribution has a linear relation to DTS and an intercept that is determined by the bond’s sector (partially pooled across sectors).</p>
+<p>Here we’ll create a Bayesian regression model where we assume the relationship between the next-day funded total return and DTS of a bond can be modeled with a StudentT distribution, where the mean of the distribution has a linear relation to DTS and the intercept is determined by the bond’s sector (partially pooled across sectors).</p>
 <p>Formally:</p>
 <p><span class="math display">\[y_i \sim \text{StudentT}(\nu,\ \alpha_{s(i)} + \beta \cdot \text{dts}_i,\ \sigma)\]</span></p>
 <p><strong>Priors:</strong> - <code>beta</code> (DTS coefficient): Normal(mean=0.001, sd=0.5) - <code>alpha[sector]</code>: Normal(mean=0, sd=0.05) - <code>sigma</code> (StudentT scale): Uniform(0, 0.2) - <code>nu</code> (degrees of freedom): Uniform(9, 12)</p>
@@ -7115,8 +7115,8 @@ dl.xr-attrs {
 </div>
 </div>
 </div>
-<p>The trace plots looks good- they have good mixing, and are pretty stationary.</p>
-<p>And here we plot the distribution of our predicted output values based on the posterior against the distribution of the real output values.</p>
+<p>The trace plots look good- they have good mixing, and are pretty stationary.</p>
+<p>Here we plot the posterior predictive distribution against the observed data.</p>
 <div id="cell-23" class="cell" data-outputid="d36857d5-a1aa-4fbe-ce5d-7eb8fbba441a" data-execution_count="35">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pm.plot_ppc(idata)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -7160,7 +7160,7 @@ dl.xr-attrs {
 </section>
 <section id="the-hyper-prior" class="level1">
 <h1>The Hyper Prior</h1>
-<p>Now let’s make an adjustment to our model by introducing a hyper prior on our alphas. So rather than treating each sector alpha as completely distinct, we treat each of them as a sample from the same distribution. Our prior essentially nudges the alphas closer together, all toward the mean of their hyper prior’s distribution.</p>
+<p>Now let’s introduce a hyper prior on our alphas. Rather than treating each sector alpha as completely distinct, we treat each of them as a sample from the same distribution. Our prior essentially nudges the alphas closer together, all toward the mean of their hyper prior’s distribution.</p>
 <div id="cell-31" class="cell" data-execution_count="38">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>sector, categories <span class="op">=</span> pd.factorize(cleandata[<span class="st">"industry_sector"</span>].to_pandas())</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
