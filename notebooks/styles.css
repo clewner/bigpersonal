@@ -1,0 +1,68 @@
+/* Subtle polish over the default cosmo theme */
+
+/* Tighter, more editorial typography for body prose */
+body {
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+/* Slightly larger h1 with more breathing room */
+h1.title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+/* Make code blocks feel less heavy */
+pre {
+  border-radius: 6px;
+  font-size: 0.92em;
+}
+
+/* Project cards on landing page */
+.grid {
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.grid > div {
+  padding: 1.25rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  transition: box-shadow 0.15s ease;
+}
+
+.grid > div:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.grid h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.grid h3 a {
+  text-decoration: none;
+}
+
+/* Pull figures out toward the margins for emphasis */
+figure {
+  margin: 1.75rem auto;
+}
+
+/* Quieter table-of-contents */
+#TOC {
+  font-size: 0.92em;
+}
+
+/* Sidebar exists only to give page-navigation prev/next an order, hide it */
+#quarto-sidebar,
+.sidebar.sidebar-navigation,
+.quarto-secondary-nav {
+  display: none !important;
+}
